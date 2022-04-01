@@ -12,6 +12,7 @@ symbols = string.ascii_uppercase + string.digits + string.ascii_lowercase
 
 COUNT_ROWS = 1024
 LENGTH_RANDOM = 8
+USER_MYSQL = "root"  # Пароль к MySQL
 PASSWOR_MYSQL = "PASSWORD"  # Пароль к MySQL
 
 
@@ -63,7 +64,7 @@ def Task_c():
 
     db = mysql.connector.connect(
         host="localhost",
-        user="root",
+        user=USER_MYSQL,
         password=PASSWOR_MYSQL
     )
     with db.cursor() as cur:
