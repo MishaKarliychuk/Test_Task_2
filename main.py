@@ -10,8 +10,8 @@ from services import read_csv, create_csv
 
 symbols = string.ascii_uppercase + string.digits + string.ascii_lowercase
 
-COUNT_ROWS = 1024
-LENGTH_RANDOM = 8
+COUNT_ROWS = 1024 # К-во записей
+LENGTH_RANDOM = 8  # Длина рандомной строки
 USER_MYSQL = "root"  # Пароль к MySQL
 PASSWOR_MYSQL = "PASSWORD"  # Пароль к MySQL
 
